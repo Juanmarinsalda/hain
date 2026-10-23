@@ -1,0 +1,9 @@
+Poné acá los GIF con estos nombres exactos. Aparecen solos en la página.
+
+hero.gif                 480 x 270   Fondo de arriba (página del juego y presskit)
+mundo1-bosque.gif        144 x 96    Bosque Oscuro
+mundo2-montana.gif       144 x 96    Montaña Nevada
+mundo3-costa.gif         144 x 96    Costa
+mundo4-bosque-rojo.gif   144 x 96    Bosque Rojo
+
+Exportar a 1x (sin escalar): la página los agranda con píxeles nítidos.

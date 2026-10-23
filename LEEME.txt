@@ -1,0 +1,29 @@
+Poné los archivos con estos nombres exactos (en minúscula). Aparecen solos en la página.
+
+ANIMACIONES (en img/)  exportar a 1x, sin escalar
+hero.gif                 480 x 270   Fondo de arriba (página del juego y presskit)
+mundo1-bosque.gif        144 x 96    Bosque Oscuro
+mundo2-montana.gif       144 x 96    Montaña Nevada
+mundo3-costa.gif         144 x 96    Costa
+mundo4-bosque-rojo.gif   144 x 96    Bosque Rojo
+
+CAPTURAS (en img/capturas/)  PNG 1920 x 1080
+captura-1-ulen.png       Contra Ulen (va grande en la página del juego)
+captura-2-balas.png      Combate con balas
+captura-3-golpe.png      Golpe con número
+captura-4-tienda.png     La tienda
+captura-5-cenuke.png     Cenuke
+captura-6-aldea.png      La aldea
+
+PERSONAJES Y ARTE PROMOCIONAL (en img/promo/)  PNG con fondo transparente
+promo-1.png ... promo-8.png
+-> Se muestran en recuadros cuadrados, sin recortar. Escalá el pixel art
+   a un múltiplo entero (x4, x8) para que la prensa lo pueda usar grande.
+
+LOGO E ÍCONO (en img/)  PNG con fondo transparente
+logo.png                 Logo de HAIN
+icono.png                Ícono cuadrado (ej. 512 x 512)
+
+TRÁILER (en video/)
+trailer.mp4              MP4 (H.264 + AAC), 1920 x 1080
+trailer-portada.png      Opcional: imagen que se ve antes de darle play (1920 x 1080)
