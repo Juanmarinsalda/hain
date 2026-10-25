@@ -11,6 +11,7 @@
   --red-hi: #D46161;
   --blood: #872626;
   --ochre: #F5B624;   /* info importante (como en la UI del juego) */
+  --green: #66B144;   /* hecho (verde = suma, como en la UI del juego) */
   --display: "Pixelify Sans", ui-monospace, "Courier New", monospace;
   --body: "Literata", Georgia, "Times New Roman", serif;
   color-scheme: dark;
@@ -138,6 +139,26 @@ a { color: var(--ochre); }
 .world .boss { font-family: var(--display); color: var(--ochre); font-size: .95rem; }
 .world p.desc { color: var(--ash); font-size: .95rem; line-height: 1.55; }
 
+/* Roadmap */
+section[id] { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 4.5rem); }
+.goals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.goal { display: grid; gap: .1rem; background: var(--sky); padding: 1.25rem 1.5rem; color: var(--ash); font-family: var(--display); font-size: 1.05rem; }
+.goal-n { color: var(--ochre); font-size: clamp(2.5rem, 6vw, 3.5rem); font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.goals-note { color: var(--ash); font-size: .95rem; margin-top: .75rem; margin-bottom: 3rem; }
+.roadmap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; align-items: start; }
+.rm-col { display: grid; gap: 1.25rem; min-width: 0; border-top: 4px solid var(--rm); padding-top: 1rem; }
+.rm-col h3 { display: flex; align-items: center; gap: .6rem; }
+.rm-col h3::before { content: ""; width: 12px; height: 12px; background: var(--rm); flex: none; }
+.rm-done { --rm: var(--green); }
+.rm-wip { --rm: var(--ochre); }
+.rm-later { --rm: var(--indigo); }
+.rm-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; }
+.rm-col li { display: grid; gap: .2rem; color: var(--ash); font-size: .95rem; line-height: 1.5; }
+.rm-col li strong { font-family: var(--display); font-weight: 600; color: var(--bone); font-size: 1.05rem; }
+.rm-wip li { border-left: 2px solid var(--ochre); padding-left: .85rem; }
+.rm-note { margin-top: 2.5rem; }
+.pk-block li strong { font-family: var(--display); font-weight: 600; color: var(--bone); display: block; }
+
 /* Capturas (pendientes) */
 .shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .shots .shot:first-child { grid-column: span 2; grid-row: span 2; }
@@ -213,6 +234,7 @@ footer a { color: var(--sand); }
 }
 
 @media (max-width: 900px) {
+  .roadmap { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
   .worlds { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pk { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
   .facts { position: static; }
@@ -220,6 +242,7 @@ footer a { color: var(--sand); }
 @media (max-width: 640px) {
   .features, .worlds, .shots, .pk-shots, .pk-art { grid-template-columns: minmax(0, 1fr); }
   .pk-promo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .goals { grid-template-columns: minmax(0, 1fr); }
   .shots .shot:first-child { grid-column: auto; grid-row: auto; }
   .nav-links { margin-left: 0; width: 100%; justify-content: space-between; }
   .nav .wrap { gap: .5rem; }
