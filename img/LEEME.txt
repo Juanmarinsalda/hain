@@ -1,4 +1,5 @@
-Poné acá los GIF con estos nombres exactos. Aparecen solos en la página.
+Poné acá los archivos con estos nombres exactos (en minúscula). Aparecen solos en la página.
+La lista completa, con el tráiler, está en el LEEME.txt de la raíz.
 
 hero.gif                 480 x 270   Fondo de arriba (página del juego y presskit)
 mundo1-bosque.gif        144 x 96    Bosque Oscuro
@@ -6,4 +7,31 @@ mundo2-montana.gif       144 x 96    Montaña Nevada
 mundo3-costa.gif         144 x 96    Costa
 mundo4-bosque-rojo.gif   144 x 96    Bosque Rojo
 
-Exportar a 1x (sin escalar): la página los agranda con píxeles nítidos.
+MUNDOS NUEVOS (en img/)  GIF 144 x 96, exportar a 1x
+mundo-estepa.gif         Estepa
+mundo-jimbo.gif          Cueva de Jimbo
+mundo-turbal.gif         Turbal
+cielo-wintek.gif         Wintek (próximamente)
+cielo-keikruk.gif        Keikruk (próximamente)
+cielo-kenekik.gif        Kenékik (próximamente)
+cielo-kamuk.gif          Kamuk (próximamente)
+cielo-inframundo.gif     Inframundo (próximamente)
+-> Exportar a 1x (sin escalar): la página los agranda con píxeles nítidos.
+
+PERSONAJES (en img/personajes/)  PNG con fondo transparente
+kaux.png
+onkolxon.png
+klatue.png
+halahaches.png
+Próximos (se ven más opacos hasta que salgan):
+yonolpe.png
+kamshout.png
+taiyin.png
+kaskoyuk.png
+benka.png
+faulo.png
+julpian.png
+
+ARTE PARA PRENSA  PNG con fondo transparente, escalado x4 u x8
+enemigos/    enemigo-1.png ... enemigo-8.png
+misc/        misc-1.png ... misc-8.png

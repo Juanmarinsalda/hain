@@ -59,17 +59,11 @@
   });
 
   // ===== Capturas, logo e ícono =====
-  // Cada recuadro busca su archivo. Si no existe, queda el aviso con el nombre que tiene que tener.
+  // Cada recuadro busca su archivo. Si no existe, queda el aviso "Próximamente".
   document.querySelectorAll("[data-img]").forEach(function (box) {
     var src = box.getAttribute("data-img");
-    var inner = box.firstElementChild;
-    if (inner) {
-      var f = document.createElement("span");
-      f.className = "fname"; f.textContent = src;
-      inner.appendChild(f);
-    }
     var img = new Image();
-    img.alt = inner ? inner.querySelector("span").textContent : "";
+    img.alt = box.getAttribute("data-alt") || "";
     img.onload = function () {
       box.textContent = "";
       box.classList.add("has-img");
@@ -88,12 +82,6 @@
   // Si existe video/trailer.mp4, aparece el reproductor y el enlace para abrirlo.
   document.querySelectorAll("[data-video]").forEach(function (box) {
     var src = box.getAttribute("data-video");
-    var inner = box.firstElementChild;
-    if (inner) {
-      var f = document.createElement("span");
-      f.className = "fname"; f.textContent = src;
-      inner.appendChild(f);
-    }
     var v = document.createElement("video");
     v.controls = true; v.preload = "metadata"; v.playsInline = true;
     var poster = box.getAttribute("data-poster");

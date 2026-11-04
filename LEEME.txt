@@ -7,6 +7,16 @@ mundo2-montana.gif       144 x 96    Montaña Nevada
 mundo3-costa.gif         144 x 96    Costa
 mundo4-bosque-rojo.gif   144 x 96    Bosque Rojo
 
+MUNDOS NUEVOS (en img/)  GIF 144 x 96, exportar a 1x
+mundo-estepa.gif         Estepa
+mundo-jimbo.gif          Cueva de Jimbo
+mundo-turbal.gif         Turbal
+cielo-wintek.gif         Wintek (próximamente)
+cielo-keikruk.gif        Keikruk (próximamente)
+cielo-kenekik.gif        Kenékik (próximamente)
+cielo-kamuk.gif          Kamuk (próximamente)
+cielo-inframundo.gif     Inframundo (próximamente)
+
 CAPTURAS (en img/capturas/)  PNG 1920 x 1080
 captura-1-ulen.png       Contra Ulen (va grande en la página del juego)
 captura-2-balas.png      Combate con balas
@@ -15,8 +25,24 @@ captura-4-tienda.png     La tienda
 captura-5-cenuke.png     Cenuke
 captura-6-aldea.png      La aldea
 
-PERSONAJES Y ARTE PROMOCIONAL (en img/promo/)  PNG con fondo transparente
-promo-1.png ... promo-8.png
+PERSONAJES (en img/personajes/)  PNG con fondo transparente
+kaux.png
+onkolxon.png
+klatue.png
+halahaches.png
+Próximos (se ven más opacos hasta que salgan):
+yonolpe.png
+kamshout.png
+taiyin.png
+kaskoyuk.png
+benka.png
+faulo.png
+julpian.png
+-> Van en las tarjetas de Personajes (página del juego y presskit).
+
+ARTE PARA PRENSA (presskit, sección Imágenes)  PNG con fondo transparente
+img/enemigos/    enemigo-1.png ... enemigo-8.png
+img/misc/        misc-1.png ... misc-8.png
 -> Se muestran en recuadros cuadrados, sin recortar. Escalá el pixel art
    a un múltiplo entero (x4, x8) para que la prensa lo pueda usar grande.
 
@@ -27,3 +53,4 @@ icono.png                Ícono cuadrado (ej. 512 x 512)
 TRÁILER (en video/)
 trailer.mp4              MP4 (H.264 + AAC), 1920 x 1080
 trailer-portada.png      Opcional: imagen que se ve antes de darle play (1920 x 1080)
+-> GitHub rechaza archivos de más de 100 MB.
