@@ -162,7 +162,7 @@ section[id] { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 4.5rem); }
 /* Personajes */
 .chars { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
 .char { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1.25rem; background: var(--sky); padding: 1.25rem; align-items: start; min-width: 0; }
-.chars > .char:first-child:not(.soon-card) { border-top: 4px solid var(--red); }
+.chars > .char:first-child { grid-column: 1 / -1; border-top: 4px solid var(--red); }
 .char-art.shot { aspect-ratio: 1 / 1; padding: .5rem; font-size: .85rem; }
 .char-art.shot.has-img { background: var(--night); }
 .char-art.shot.contain.has-img img { padding: .5rem; }
