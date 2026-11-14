@@ -176,6 +176,22 @@ section[id] { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 4.5rem); }
 .chars-note { margin-top: 1.5rem; }
 .pk .chars { grid-template-columns: minmax(0, 1fr); }
 
+/* Biomas */
+.biomes { display: grid; gap: 2.75rem; }
+.biome-row { display: grid; gap: 1rem; }
+.biome-row-head { display: flex; align-items: baseline; gap: 1rem; border-bottom: 2px solid var(--sky); padding-bottom: .5rem; }
+.biome-row-head .num { font-family: var(--display); font-size: 1.6rem; color: var(--bone); line-height: 1; }
+.biome-row-head .boss { font-family: var(--display); color: var(--ochre); font-size: 1rem; }
+.biome-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.biome { margin: 0; display: grid; gap: .8rem; align-content: start; min-width: 0; }
+.biome-img.shot { aspect-ratio: 16 / 9; padding: 0; }
+.biome-img.shot.has-img img { object-fit: cover; }
+.biome figcaption { display: grid; gap: .35rem; }
+.biome figcaption h3 { font-size: 1.3rem; }
+.biome figcaption p { color: var(--ash); font-size: .98rem; max-width: 52ch; }
+.biome-cycle { justify-self: start; font-family: var(--display); font-size: .82rem; color: var(--ochre); }
+.biome-wide .biome-img.shot { aspect-ratio: 6 / 1; }
+
 /* Próximamente */
 .sub-head { margin-top: 3.5rem; margin-bottom: .5rem; font-size: 1.5rem; }
 .sub-head + .note { margin-bottom: 1.5rem; }
@@ -271,6 +287,8 @@ footer a { color: var(--sand); }
   .facts { position: static; }
 }
 @media (max-width: 640px) {
+  .biome-pair { grid-template-columns: minmax(0, 1fr); }
+  .biome-wide .biome-img.shot { aspect-ratio: 3 / 1; }
   .features, .worlds, .worlds-five, .shots, .pk-shots, .pk-art { grid-template-columns: minmax(0, 1fr); }
   .pk-promo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .shots .shot:first-child { grid-column: auto; grid-row: auto; }
